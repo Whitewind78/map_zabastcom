@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8fac9cf497a94e96e3ad5c63e508d3ac {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8fac9cf497a94e96e3ad5c63e508d3ac" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8fac9cf497a94e96e3ad5c63e508d3ac = L.map(
+                "map_8fac9cf497a94e96e3ad5c63e508d3ac",
+                {
+                    center: [54.84186965821643, 83.11286485356726],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+
+            
+
+        
+    
+            var tile_layer_d9d438795681fe565dcbfbff2da42efc = L.tileLayer(
+                "https://{s}.tile.jawg.io/jawg-matrix/{z}/{x}/{y}{r}.png?access-token=vuIWGdUqkrF2HyhMBi2MFxaFSmtFMnc07cMWAv7LPjDpP99cKo8hPuBl7qV3Hpgq",
+                {"attribution": "\u003ca href=\\\"https://www.jawg.io?utm_medium=map\u0026utm_source=attribution\\\" target=\\\"_blank\\\"\u003e\u0026copy; Jawg\u003c/a\u003e - \u003ca href=\\\"https://www.openstreetmap.org?utm_medium=map-attribution\u0026utm_source=jawg\\\" target=\\\"_blank\\\"\u003e\u0026copy; OpenStreetMap\u003c/a\u003e\u0026nbsp;contributors", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": true, "position": "topright", "title": "Expand me", "titleCancel": "Exit me"}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var marker_98e2b54cd9ba274c04392b6bb2c1642c = L.marker(
+                [45.160343, 36.68595],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_d651dd55afde6870a7023e0036916f17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_98e2b54cd9ba274c04392b6bb2c1642c.setIcon(icon_d651dd55afde6870a7023e0036916f17);
+        
+    
+        var popup_bc5b21069b45a62788a7be3b634a29e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd4a18af3a9da23ce6966866cf9947da = $(`<div id="html_fd4a18af3a9da23ce6966866cf9947da" style="width: 100.0%; height: 100.0%;">В п. Волна Краснодарского края подрядчик "Тольяттиазота" компания ООО "МПО "Технология" задерживает вахтовикам зарплату. Вахтовики написали заявление о приостановке работы и отказываются уезжать домой.</div>`)[0];
+                popup_bc5b21069b45a62788a7be3b634a29e2.setContent(html_fd4a18af3a9da23ce6966866cf9947da);
+            
+        
+
+        marker_98e2b54cd9ba274c04392b6bb2c1642c.bindPopup(popup_bc5b21069b45a62788a7be3b634a29e2)
+        ;
+
+        
+    
+    
+            marker_98e2b54cd9ba274c04392b6bb2c1642c.bindTooltip(
+                `<div>
+                     Долги вахтовикам в п. Волна Краснодарского края
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fcd9aa7a320717f9f083b706a2344003 = L.marker(
+                [47.77478, 27.95089],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_24ff9a1e9835c512f156c069730a4a6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fcd9aa7a320717f9f083b706a2344003.setIcon(icon_24ff9a1e9835c512f156c069730a4a6a);
+        
+    
+        var popup_b7971669809e4042425a37dbb79ee6e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3c32918c83f2d04ad5cfb999fa2cb72 = $(`<div id="html_e3c32918c83f2d04ad5cfb999fa2cb72" style="width: 100.0%; height: 100.0%;">Нынешние и бывшие работники "Молдаэросервис" собрались на встречу, организованную действующей администрацией. Бывшие сотрудники компании говорят, что не получают зарплату уже почти три года. Процесс банкротства предприятия длится уже более двух лет, и люди не верят, что когда-нибудь получат свои деньги.</div>`)[0];
+                popup_b7971669809e4042425a37dbb79ee6e7.setContent(html_e3c32918c83f2d04ad5cfb999fa2cb72);
+            
+        
+
+        marker_fcd9aa7a320717f9f083b706a2344003.bindPopup(popup_b7971669809e4042425a37dbb79ee6e7)
+        ;
+
+        
+    
+    
+            marker_fcd9aa7a320717f9f083b706a2344003.bindTooltip(
+                `<div>
+                     В Бельцах прошли переговоры работников "Молдаэросервис" с администрацией предприятия
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a34da04f8d4484bbbe5b0642326cecf = L.marker(
+                [52.64281, 39.62791],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_b7d6221c7716409f417144848a8f433b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a34da04f8d4484bbbe5b0642326cecf.setIcon(icon_b7d6221c7716409f417144848a8f433b);
+        
+    
+        var popup_c8c67bd278e0e62d330093cb190016d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07547a022f41b19b6ae7f899736110e2 = $(`<div id="html_07547a022f41b19b6ae7f899736110e2" style="width: 100.0%; height: 100.0%;">В Липецке прокуратура провела проверку по коллективному обращению работников ООО «Оконные изделия». Установлено, что с 5 работниками, занимавшимися монтажом окон в школе и городской поликлинике г. Ровеньки Луганской Народной Республики, не были оформлены трудовые отношения. Выявлена задолженность по зарплате на сумму свыше 1,3 млн рублей. Возбуждено уголовное дело. Прокуратура направила иски в суд. После вмешательства прокуратуры задолженность погашена в полном объеме.</div>`)[0];
+                popup_c8c67bd278e0e62d330093cb190016d5.setContent(html_07547a022f41b19b6ae7f899736110e2);
+            
+        
+
+        marker_8a34da04f8d4484bbbe5b0642326cecf.bindPopup(popup_c8c67bd278e0e62d330093cb190016d5)
+        ;
+
+        
+    
+    
+            marker_8a34da04f8d4484bbbe5b0642326cecf.bindTooltip(
+                `<div>
+                     Жалоба работников ООО «Оконные изделия» (Липецк)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cdbf61bcde0724585c6040a42074a4f = L.marker(
+                [53.221184, 50.201023],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_559cf687bb3b6986a72b1ce2d98ad69a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1cdbf61bcde0724585c6040a42074a4f.setIcon(icon_559cf687bb3b6986a72b1ce2d98ad69a);
+        
+    
+        var popup_10a7c3a284e2e15b7ed79894ad02f081 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3f7f12f79a0f44cbcf0ef2b2949b8a2 = $(`<div id="html_b3f7f12f79a0f44cbcf0ef2b2949b8a2" style="width: 100.0%; height: 100.0%;">В Самаре объявили «итальянскую забастовку» сотрудники сразу двух ЧОПов — «Блокпост Техно» и «Команда». Больше недели они сидят в офисе и выполняют лишь необходимый минимум работы, но руководство на контакт не идет. Сотрудники просят вывести зарплаты из серой зоны, убрать принудительные переработки, штрафы и улучшить условия труда.</div>`)[0];
+                popup_10a7c3a284e2e15b7ed79894ad02f081.setContent(html_b3f7f12f79a0f44cbcf0ef2b2949b8a2);
+            
+        
+
+        marker_1cdbf61bcde0724585c6040a42074a4f.bindPopup(popup_10a7c3a284e2e15b7ed79894ad02f081)
+        ;
+
+        
+    
+    
+            marker_1cdbf61bcde0724585c6040a42074a4f.bindTooltip(
+                `<div>
+                     "Итальянская" забастовка сотрудников ЧОПов в Самаре
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_958d706fd0abbf2ffee1bf9041e243c7 = L.marker(
+                [51.171227, 71.40689],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_745e456f0caea4a41cb766cfa78841ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_958d706fd0abbf2ffee1bf9041e243c7.setIcon(icon_745e456f0caea4a41cb766cfa78841ef);
+        
+    
+        var popup_88667cb3e47a9bfa5d63ce41fe48cb0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84effd07f716d23c4baa2cd8233fb7da = $(`<div id="html_84effd07f716d23c4baa2cd8233fb7da" style="width: 100.0%; height: 100.0%;">В Казахстане горноспасатели утверждают, что на шахтах АМТ, где недавно произошла трагедия, всегда было множество нарушений. Ранее государственную службу горноспасателей передали в частные руки, и в случае если руководитель выставлял все замечания то шахта могла бы с ними разорвать договор. Горноспасатели требуют восстановить своих коллег, что начали поднимать проблемы ранее, а также восстановить председателя профсоюза.</div>`)[0];
+                popup_88667cb3e47a9bfa5d63ce41fe48cb0a.setContent(html_84effd07f716d23c4baa2cd8233fb7da);
+            
+        
+
+        marker_958d706fd0abbf2ffee1bf9041e243c7.bindPopup(popup_88667cb3e47a9bfa5d63ce41fe48cb0a)
+        ;
+
+        
+    
+    
+            marker_958d706fd0abbf2ffee1bf9041e243c7.bindTooltip(
+                `<div>
+                     Обращение горноспасателей Казахстана
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60da29f1f5df32ccc17b7b597c9b0994 = L.marker(
+                [51.530315, 45.979424],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_1b9c321df56920e3ee38bd40fd365158 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_60da29f1f5df32ccc17b7b597c9b0994.setIcon(icon_1b9c321df56920e3ee38bd40fd365158);
+        
+    
+        var popup_a8344af20b76e21c2c77a3c819846db0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_623cb70a6945e3f7875fb933eb95300b = $(`<div id="html_623cb70a6945e3f7875fb933eb95300b" style="width: 100.0%; height: 100.0%;">В редакцию ИА «Версия-Саратов» пришло анонимное письмо, авторы которого назвали себя «рабочим коллективом СГТУ имени Гагарина». Обратившиеся рассказывают о якобы низких зарплатах и отсутствии индексации зарплат у технического состава.</div>`)[0];
+                popup_a8344af20b76e21c2c77a3c819846db0.setContent(html_623cb70a6945e3f7875fb933eb95300b);
+            
+        
+
+        marker_60da29f1f5df32ccc17b7b597c9b0994.bindPopup(popup_a8344af20b76e21c2c77a3c819846db0)
+        ;
+
+        
+    
+    
+            marker_60da29f1f5df32ccc17b7b597c9b0994.bindTooltip(
+                `<div>
+                     Жалоба техперсонала СГТУ на низкие зарплаты
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de4c22174ce40d60ccb32b63af8ad1e8 = L.marker(
+                [55.807266, 38.983746],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_e250bdd1dbc463a6698168ef944b6c6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_de4c22174ce40d60ccb32b63af8ad1e8.setIcon(icon_e250bdd1dbc463a6698168ef944b6c6e);
+        
+    
+        var popup_118129c6accaf2e47bf301e79f543022 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b13fa4968195de6e71780be57034af5 = $(`<div id="html_9b13fa4968195de6e71780be57034af5" style="width: 100.0%; height: 100.0%;">В Орехово-Зуево 30 октября прошла краткосрочная забастовка водителей "Яндекс.Такси". Водители собрались на парковке у Аквилона. Основное требование - поднятие минимальной стоимости поездки.</div>`)[0];
+                popup_118129c6accaf2e47bf301e79f543022.setContent(html_9b13fa4968195de6e71780be57034af5);
+            
+        
+
+        marker_de4c22174ce40d60ccb32b63af8ad1e8.bindPopup(popup_118129c6accaf2e47bf301e79f543022)
+        ;
+
+        
+    
+    
+            marker_de4c22174ce40d60ccb32b63af8ad1e8.bindTooltip(
+                `<div>
+                     Забастовка таксистов в Орехово-Зуево
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f5f968277a74ba820fb0aaed3c49610 = L.marker(
+                [69.24156, 88.20875],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_53ad23ab39005b551195d3969553c20a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7f5f968277a74ba820fb0aaed3c49610.setIcon(icon_53ad23ab39005b551195d3969553c20a);
+        
+    
+        var popup_fa650a9ddaf10a7024c2c3009e6dbe6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44d11318b23ce372fad3ede35e780bdd = $(`<div id="html_44d11318b23ce372fad3ede35e780bdd" style="width: 100.0%; height: 100.0%;">ООО "Каскад-Инфра" (Объект - строительство Черниговского ГОКа, г. Норильск) нарушает свои обязательства перед вахтовиками, не выплачивая им зарплату, что привело к объявлению забастовки. В настоящее время около 400 вахтовиков остаются без оплаты труда уже более 17 дней.</div>`)[0];
+                popup_fa650a9ddaf10a7024c2c3009e6dbe6f.setContent(html_44d11318b23ce372fad3ede35e780bdd);
+            
+        
+
+        marker_7f5f968277a74ba820fb0aaed3c49610.bindPopup(popup_fa650a9ddaf10a7024c2c3009e6dbe6f)
+        ;
+
+        
+    
+    
+            marker_7f5f968277a74ba820fb0aaed3c49610.bindTooltip(
+                `<div>
+                     Вахтовики остановили работу на Черниговском ГОКе
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca1e8a66f17baaafe481e21719502f3f = L.marker(
+                [56.33357, 37.51005],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_c8ce18dd8f269a2334bed0bbca251eca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ca1e8a66f17baaafe481e21719502f3f.setIcon(icon_c8ce18dd8f269a2334bed0bbca251eca);
+        
+    
+        var popup_accae9e95fee2760e6ffcacd6cb2580c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_685903551961ebbdacd0bc4734998407 = $(`<div id="html_685903551961ebbdacd0bc4734998407" style="width: 100.0%; height: 100.0%;">В Дмитрове водители "Яндекс.Такси" продолжают забастовку второй день подряд. Требования водителей остаются без внимания со стороны компании. Водители намерены и дальше продолжать бойкотировать агрегатор, пока их не услышат.</div>`)[0];
+                popup_accae9e95fee2760e6ffcacd6cb2580c.setContent(html_685903551961ebbdacd0bc4734998407);
+            
+        
+
+        marker_ca1e8a66f17baaafe481e21719502f3f.bindPopup(popup_accae9e95fee2760e6ffcacd6cb2580c)
+        ;
+
+        
+    
+    
+            marker_ca1e8a66f17baaafe481e21719502f3f.bindTooltip(
+                `<div>
+                     В Дмитрове водители "Яндекс.Такси" продолжают забастовку
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47e03ef4850ad619154302007417be6f = L.marker(
+                [45.340054, 51.89079],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_52b7b0c5fc2534c1efcdd32a128290a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_47e03ef4850ad619154302007417be6f.setIcon(icon_52b7b0c5fc2534c1efcdd32a128290a1);
+        
+    
+        var popup_f724f10ef2bcaf4b90af7a61bfc272d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11dd2d36eb45f95d8683905d6212b72c = $(`<div id="html_11dd2d36eb45f95d8683905d6212b72c" style="width: 100.0%; height: 100.0%;">В Казахстане на месторождении «Каратурун Восточный» с 23 октября бастуют работники ТОО «Caspian Drilling LLP». Бастующие просили восстановить ранее уволенных коллег и повысить зарплаты. Компания обратилась в суд и забастовка была признана незаконной.</div>`)[0];
+                popup_f724f10ef2bcaf4b90af7a61bfc272d0.setContent(html_11dd2d36eb45f95d8683905d6212b72c);
+            
+        
+
+        marker_47e03ef4850ad619154302007417be6f.bindPopup(popup_f724f10ef2bcaf4b90af7a61bfc272d0)
+        ;
+
+        
+    
+    
+            marker_47e03ef4850ad619154302007417be6f.bindTooltip(
+                `<div>
+                     Забастовка работников ТОО «Caspian Drilling LLP»
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9693d64ae893af7b91b3b6b09f20affe = L.marker(
+                [54.898155, 52.268936],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_8b886eba392cfdc4dd7dc09b5bff2d88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9693d64ae893af7b91b3b6b09f20affe.setIcon(icon_8b886eba392cfdc4dd7dc09b5bff2d88);
+        
+    
+        var popup_e5cff6e862d32adfea68f78eb67ac727 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6404d391ed617d6d567bef3aac7cdc3b = $(`<div id="html_6404d391ed617d6d567bef3aac7cdc3b" style="width: 100.0%; height: 100.0%;">Главврача и зама детской альметьевской больницы, которые выживали докторов с работы, сняли с должностей. Ранее работники написали жалобу на кадровый произвол, но в Управлении здравоохранения не приняли мер.</div>`)[0];
+                popup_e5cff6e862d32adfea68f78eb67ac727.setContent(html_6404d391ed617d6d567bef3aac7cdc3b);
+            
+        
+
+        marker_9693d64ae893af7b91b3b6b09f20affe.bindPopup(popup_e5cff6e862d32adfea68f78eb67ac727)
+        ;
+
+        
+    
+    
+            marker_9693d64ae893af7b91b3b6b09f20affe.bindTooltip(
+                `<div>
+                     Главврача и зама альметьевской больницы сняли с должностей
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8459205ab64837c7be2db744a58b80f1 = L.marker(
+                [44.550846, 135.64447],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_507683aeddc82925fc025543222e6bab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8459205ab64837c7be2db744a58b80f1.setIcon(icon_507683aeddc82925fc025543222e6bab);
+        
+    
+        var popup_6fb3f49f349c134394b2ecb0a3a12b10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a55bcb1f3d4844c4385846ae78c3927b = $(`<div id="html_a55bcb1f3d4844c4385846ae78c3927b" style="width: 100.0%; height: 100.0%;">Десятки исковых заявлений к ООО "Дальнегорский химический комбинат БОР" рассмотрены в Дальнегорском районном суде в октябре. Суд удовлетворяет исковые требования по выплате задолженностей по зарплате, компенсации за несвоевременную выплату и даже компенсацию морального вреда в размере 5000 рублей.</div>`)[0];
+                popup_6fb3f49f349c134394b2ecb0a3a12b10.setContent(html_a55bcb1f3d4844c4385846ae78c3927b);
+            
+        
+
+        marker_8459205ab64837c7be2db744a58b80f1.bindPopup(popup_6fb3f49f349c134394b2ecb0a3a12b10)
+        ;
+
+        
+    
+    
+            marker_8459205ab64837c7be2db744a58b80f1.bindTooltip(
+                `<div>
+                     Суд удовлетворил иски в пользу работников ДХК БОР
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8ea81a53ebcaaab38ef387c95ac9ce7 = L.marker(
+                [52.958206, 158.39441],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_ec89c35c3e3595363c39428478b601cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8ea81a53ebcaaab38ef387c95ac9ce7.setIcon(icon_ec89c35c3e3595363c39428478b601cf);
+        
+    
+        var popup_dffcc26c7fadcdfd289448d3257965d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5fbfc3d120322251dc9dbfe08b83829 = $(`<div id="html_a5fbfc3d120322251dc9dbfe08b83829" style="width: 100.0%; height: 100.0%;">Трудовой коллектив ООО "РЗ "Сокра" обратился к председателю Камчатского Арбитражного суда. Работники просят сохраненить предприятие. Ранее трудовой коллектив уже направлял коллективное обращение с аналогичной просьбой губернатору, но не получил ответа.</div>`)[0];
+                popup_dffcc26c7fadcdfd289448d3257965d2.setContent(html_a5fbfc3d120322251dc9dbfe08b83829);
+            
+        
+
+        marker_d8ea81a53ebcaaab38ef387c95ac9ce7.bindPopup(popup_dffcc26c7fadcdfd289448d3257965d2)
+        ;
+
+        
+    
+    
+            marker_d8ea81a53ebcaaab38ef387c95ac9ce7.bindTooltip(
+                `<div>
+                     Повторное обращение коллектива ООО "РЗ "Сокра"
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7fc2d9959994b65620315bc48731779 = L.marker(
+                [47.078217, 51.88035],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_e00dd5048521ad4f8da816a0fae71a85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c7fc2d9959994b65620315bc48731779.setIcon(icon_e00dd5048521ad4f8da816a0fae71a85);
+        
+    
+        var popup_a6e4318f26773e3811d75b3d090159d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbfb6aafb2168cb9611ba62442989989 = $(`<div id="html_cbfb6aafb2168cb9611ba62442989989" style="width: 100.0%; height: 100.0%;">В Атырау после скандала в «Атырауской городской поликлинике №4» директора отправили в СИЗО. Её подозревают в хищении бюджетных средств в особо крупном размере. Ранее сотрудники коллективно выразили недовольство условиями работы и отношением руководства.</div>`)[0];
+                popup_a6e4318f26773e3811d75b3d090159d6.setContent(html_cbfb6aafb2168cb9611ba62442989989);
+            
+        
+
+        marker_c7fc2d9959994b65620315bc48731779.bindPopup(popup_a6e4318f26773e3811d75b3d090159d6)
+        ;
+
+        
+    
+    
+            marker_c7fc2d9959994b65620315bc48731779.bindTooltip(
+                `<div>
+                     В Атырау директора поликлиники отправили в СИЗО
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_006802094d5ab70284d5ff79be9acfb5 = L.marker(
+                [52.735664, 103.649155],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_b41700bc1ba80f205952eca857658d85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_006802094d5ab70284d5ff79be9acfb5.setIcon(icon_b41700bc1ba80f205952eca857658d85);
+        
+    
+        var popup_5ba81029646d40f0000fc95364414459 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43e00eb7969522798aa139bb6cb88ea6 = $(`<div id="html_43e00eb7969522798aa139bb6cb88ea6" style="width: 100.0%; height: 100.0%;">В Усолье-Сибирском в результате принятых прокуратурой мер перед работниками местной газеты погашены долги по заработной плате. Выплачены долги на общую сумму более 930 тыс рублей.</div>`)[0];
+                popup_5ba81029646d40f0000fc95364414459.setContent(html_43e00eb7969522798aa139bb6cb88ea6);
+            
+        
+
+        marker_006802094d5ab70284d5ff79be9acfb5.bindPopup(popup_5ba81029646d40f0000fc95364414459)
+        ;
+
+        
+    
+    
+            marker_006802094d5ab70284d5ff79be9acfb5.bindTooltip(
+                `<div>
+                     Погашены долги работникам редакции газеты в Усолье-Сибирском
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e79e1a0817e3c394cf623e66db4e61a = L.marker(
+                [52.61763, 39.585873],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_5cecb588500a641f704ccf76a2583bdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5e79e1a0817e3c394cf623e66db4e61a.setIcon(icon_5cecb588500a641f704ccf76a2583bdf);
+        
+    
+        var popup_15c9b20694a8086421e243928e4b4278 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_599e8f71dec71553293a0a60fa4d879f = $(`<div id="html_599e8f71dec71553293a0a60fa4d879f" style="width: 100.0%; height: 100.0%;">На прием к руководителю СУ СК России по Липецкой области обратились работники частного охранного предприятия, заявившие о долгах по зарплате на сумму более 300 тыс. рублей. Трудовые отношения официально не оформлялись. Их пришлось устанавливать в судебном порядке.  Суд удовлетворил иск заявителей, подтвердив трудовые отношения.</div>`)[0];
+                popup_15c9b20694a8086421e243928e4b4278.setContent(html_599e8f71dec71553293a0a60fa4d879f);
+            
+        
+
+        marker_5e79e1a0817e3c394cf623e66db4e61a.bindPopup(popup_15c9b20694a8086421e243928e4b4278)
+        ;
+
+        
+    
+    
+            marker_5e79e1a0817e3c394cf623e66db4e61a.bindTooltip(
+                `<div>
+                     Жалоба работников ЧОП в Липецке
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09f37ea4807e30545acf9e898ceca6fe = L.marker(
+                [52.805267, 41.362247],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_03d1858a05aefeab35ba3961aac01eff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09f37ea4807e30545acf9e898ceca6fe.setIcon(icon_03d1858a05aefeab35ba3961aac01eff);
+        
+    
+        var popup_d235254502826cdb9be20e9eb9e85979 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d21db40250fa930c4240620f494f30d4 = $(`<div id="html_d21db40250fa930c4240620f494f30d4" style="width: 100.0%; height: 100.0%;">20 октября рабочие "КомЭк" побывали на личном приёме у руководителя следственного управления Следственного комитета РФ по Тамбовской области. Представители трудового коллектива пообщались и передали ему письменное обращение. Было обещано провести проверку всех изложенных в обращении фактов.</div>`)[0];
+                popup_d235254502826cdb9be20e9eb9e85979.setContent(html_d21db40250fa930c4240620f494f30d4);
+            
+        
+
+        marker_09f37ea4807e30545acf9e898ceca6fe.bindPopup(popup_d235254502826cdb9be20e9eb9e85979)
+        ;
+
+        
+    
+    
+            marker_09f37ea4807e30545acf9e898ceca6fe.bindTooltip(
+                `<div>
+                     Рабочие "КомЭк" встретились с главой СУ СК РФ по Тамбовской области
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67406c553072ea5d18b71ae8dbe396b4 = L.marker(
+                [53.8266, 91.30555],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_b8f81b29119cfcf5868e1b5c0309cff4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_67406c553072ea5d18b71ae8dbe396b4.setIcon(icon_b8f81b29119cfcf5868e1b5c0309cff4);
+        
+    
+        var popup_784aa6c25c36c9e61d7d73cf238faade = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ef98872a04c79abf94e167ae45e74ec = $(`<div id="html_4ef98872a04c79abf94e167ae45e74ec" style="width: 100.0%; height: 100.0%;">В ГИТ в Республике Хакасия поступило коллективное обращение сотрудников МБУ ДО «Детский оздоровительный лагерь «Юность». Работодатель не заключил с ними трудовые договоры. Информация была направлена в прокуратуру для рассмотрения и принятия мер прокурорского реагирования. Прокуратурой возбуждено административное дело в отношении директора учреждения.</div>`)[0];
+                popup_784aa6c25c36c9e61d7d73cf238faade.setContent(html_4ef98872a04c79abf94e167ae45e74ec);
+            
+        
+
+        marker_67406c553072ea5d18b71ae8dbe396b4.bindPopup(popup_784aa6c25c36c9e61d7d73cf238faade)
+        ;
+
+        
+    
+    
+            marker_67406c553072ea5d18b71ae8dbe396b4.bindTooltip(
+                `<div>
+                     Жалоба работников детского лагеря «Юность» в Хакасии
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55601db2afbdea4c66ab7d0b9dbf48c4 = L.marker(
+                [55.789024, 49.17494],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_fb137d9fab192dcb798e28839ef5cd57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55601db2afbdea4c66ab7d0b9dbf48c4.setIcon(icon_fb137d9fab192dcb798e28839ef5cd57);
+        
+    
+        var popup_c44f02693bc9bb3e365e89a1b736b1d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c893aa5567782552affb3ad17382842 = $(`<div id="html_5c893aa5567782552affb3ad17382842" style="width: 100.0%; height: 100.0%;">В Татарстане прокуратура рассмотрела коллективное обращение работников ООО «Поволжская зерновая компания». Установлено, что работодатель не в полном объеме оплачивал работу сотрудников в праздники и выходные и начислял зарплату ниже МРОТ. В адрес гендиректора предприятия внесено представление. Работникам произведен перерасчет зарплаты, виновные сотрудники компании привлечены к дисциплинарной ответственности.</div>`)[0];
+                popup_c44f02693bc9bb3e365e89a1b736b1d5.setContent(html_5c893aa5567782552affb3ad17382842);
+            
+        
+
+        marker_55601db2afbdea4c66ab7d0b9dbf48c4.bindPopup(popup_c44f02693bc9bb3e365e89a1b736b1d5)
+        ;
+
+        
+    
+    
+            marker_55601db2afbdea4c66ab7d0b9dbf48c4.bindTooltip(
+                `<div>
+                     Жалоба работников ООО «Поволжская зерновая компания»
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b30d38ac120e224fc7316eb53e4872d0 = L.marker(
+                [56.293106, 101.711685],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_c6d1f9fd15eea879633a58107adf1626 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b30d38ac120e224fc7316eb53e4872d0.setIcon(icon_c6d1f9fd15eea879633a58107adf1626);
+        
+    
+        var popup_dc4b5bd89d5fb244dbf067711a33f8a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6c9f24808f5113a3d095f2d3604d1c1 = $(`<div id="html_a6c9f24808f5113a3d095f2d3604d1c1" style="width: 100.0%; height: 100.0%;">В Братске прокуратура провела проверку по коллективному обращению работников организации, оказывающей стоматологические услуги. Установлено, что с 8 местными жителями не были заключены трудовые договоры.  Прокурор внес представление в адрес руководителя. После прокурорского вмешательства с 8 работниками заключены трудовые договоры.</div>`)[0];
+                popup_dc4b5bd89d5fb244dbf067711a33f8a5.setContent(html_a6c9f24808f5113a3d095f2d3604d1c1);
+            
+        
+
+        marker_b30d38ac120e224fc7316eb53e4872d0.bindPopup(popup_dc4b5bd89d5fb244dbf067711a33f8a5)
+        ;
+
+        
+    
+    
+            marker_b30d38ac120e224fc7316eb53e4872d0.bindTooltip(
+                `<div>
+                     Жалоба работников стоматологической организации в Братске
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8938886022fa3841206dd846a0cace2b = L.marker(
+                [66.52359, 66.5951],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_d814ad8ef0115158e7f545b64d0531e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8938886022fa3841206dd846a0cace2b.setIcon(icon_d814ad8ef0115158e7f545b64d0531e1);
+        
+    
+        var popup_efa30b368b8a9a861ca855e6379ec1bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9260438816abc1ef983b31cc90504fa6 = $(`<div id="html_9260438816abc1ef983b31cc90504fa6" style="width: 100.0%; height: 100.0%;">Пятеро уволенных сотрудников ГКУ «Научный центр изучения Арктики» в апреле 2023 года обратились в прокуратуру. Во время проверки прокуратура нашла несколько серьёзных нарушений законодательства. Работников восстановили через суд и выплатили около 3,5 млн рублей недополученных доходов и компенсации.</div>`)[0];
+                popup_efa30b368b8a9a861ca855e6379ec1bd.setContent(html_9260438816abc1ef983b31cc90504fa6);
+            
+        
+
+        marker_8938886022fa3841206dd846a0cace2b.bindPopup(popup_efa30b368b8a9a861ca855e6379ec1bd)
+        ;
+
+        
+    
+    
+            marker_8938886022fa3841206dd846a0cace2b.bindTooltip(
+                `<div>
+                     Ученые из ГКУ «Научный центр изучения Арктики» обратились в суд
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a17acc9f7bb69fcf7ad486a56ef1be0f = L.marker(
+                [51.53715, 46.00431],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_4f4f117797924ab056c5e90e31e96e46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a17acc9f7bb69fcf7ad486a56ef1be0f.setIcon(icon_4f4f117797924ab056c5e90e31e96e46);
+        
+    
+        var popup_c1f976617445529ebc4c47eead72b2c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b641ebf146a0584be51e9a53b0645686 = $(`<div id="html_b641ebf146a0584be51e9a53b0645686" style="width: 100.0%; height: 100.0%;">По словам губернатора Саратовской области, частично погашена задолженность по зарплате перед сотрудниками АО "Нефтемаш-САПКОН", на предприятии работает конкурсный управляющий, предприятие действует, есть арендатор, который осуществляет производственную деятельность.</div>`)[0];
+                popup_c1f976617445529ebc4c47eead72b2c7.setContent(html_b641ebf146a0584be51e9a53b0645686);
+            
+        
+
+        marker_a17acc9f7bb69fcf7ad486a56ef1be0f.bindPopup(popup_c1f976617445529ebc4c47eead72b2c7)
+        ;
+
+        
+    
+    
+            marker_a17acc9f7bb69fcf7ad486a56ef1be0f.bindTooltip(
+                `<div>
+                     Работникам АО "Нефтемаш-САПКОН" частично выплатили долги по зарплате
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f43d8d36ff0d2f1dca5cb309fdd212a = L.marker(
+                [58.601894, 49.67556],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_77299ca6723488bdf473c2c9be933d1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7f43d8d36ff0d2f1dca5cb309fdd212a.setIcon(icon_77299ca6723488bdf473c2c9be933d1a);
+        
+    
+        var popup_259640003bfb6c46ff4b60d931297a81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3c89a81eee8ac721163353b67125894 = $(`<div id="html_d3c89a81eee8ac721163353b67125894" style="width: 100.0%; height: 100.0%;">В Кирове прокуратура на основании обращения граждан провела проверку ООО «А-С», деятельность которого связана с реализацией строительных материалов. Была выявлена задолженность по зарплате перед 4 бывшими работниками компании на сумму более 200 тыс. рублей. Прокурор внёс представление и возбудил в отношении предприятия и его руководителя дела об административных правонарушениях. Директор организации и юридическое лицо оштрафованы, задолженность погашена.</div>`)[0];
+                popup_259640003bfb6c46ff4b60d931297a81.setContent(html_d3c89a81eee8ac721163353b67125894);
+            
+        
+
+        marker_7f43d8d36ff0d2f1dca5cb309fdd212a.bindPopup(popup_259640003bfb6c46ff4b60d931297a81)
+        ;
+
+        
+    
+    
+            marker_7f43d8d36ff0d2f1dca5cb309fdd212a.bindTooltip(
+                `<div>
+                     Жалоба работников ООО «А-С» в Кирове
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fba56a17fcf37b88dd3ad28febacb59c = L.marker(
+                [54.778534, 32.03881],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_ba9dcac427202d45954ef57d79dae222 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fba56a17fcf37b88dd3ad28febacb59c.setIcon(icon_ba9dcac427202d45954ef57d79dae222);
+        
+    
+        var popup_feaa081c3938a85b6c1e5e53dd22c05a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5f425e4a70277c90946ab2f53d7068e = $(`<div id="html_a5f425e4a70277c90946ab2f53d7068e" style="width: 100.0%; height: 100.0%;">Депутат Смоленской областной Думы от КПРФ обратился в прокуратуру в интересах работников ООО «Титул», ООО «Медиарус» и ООО «Бизнеслинк-Р». В результате стало известно, что прокуратура готовится привлечь руководство фирм к административной ответственности. Кроме того, в указанных фирмах проводятся контрольные мероприятия Государственной инспекцией труда.</div>`)[0];
+                popup_feaa081c3938a85b6c1e5e53dd22c05a.setContent(html_a5f425e4a70277c90946ab2f53d7068e);
+            
+        
+
+        marker_fba56a17fcf37b88dd3ad28febacb59c.bindPopup(popup_feaa081c3938a85b6c1e5e53dd22c05a)
+        ;
+
+        
+    
+    
+            marker_fba56a17fcf37b88dd3ad28febacb59c.bindTooltip(
+                `<div>
+                     Депутат обратился в прокуратуру в интересах работников ООО «Титул»
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10447ca4fcd24f711b76a41158aa7317 = L.marker(
+                [56.33357, 37.51005],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_cfc06026540f680c5618984818302448 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_10447ca4fcd24f711b76a41158aa7317.setIcon(icon_cfc06026540f680c5618984818302448);
+        
+    
+        var popup_751f9e06ec6752303665cde6e4892fee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_939cf2d7f1103f6dce07efd5aa4080e2 = $(`<div id="html_939cf2d7f1103f6dce07efd5aa4080e2" style="width: 100.0%; height: 100.0%;">Таксисты в Дмитрове провели забастовку и организовали сход. Недавно «Яндекс.Такси» отменил гарантированную минимальную сумму оплаты заказа. Работники предлагают поднять минималку до 150 рублей и расстояние ближней подачи оставить не более двух километров.</div>`)[0];
+                popup_751f9e06ec6752303665cde6e4892fee.setContent(html_939cf2d7f1103f6dce07efd5aa4080e2);
+            
+        
+
+        marker_10447ca4fcd24f711b76a41158aa7317.bindPopup(popup_751f9e06ec6752303665cde6e4892fee)
+        ;
+
+        
+    
+    
+            marker_10447ca4fcd24f711b76a41158aa7317.bindTooltip(
+                `<div>
+                     Забастовка водителей «Яндекс.Такси» в Дмитрове
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c07ac21ffd93cd496f21626384bb9c07 = L.marker(
+                [51.973476, 47.816483],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_8e0f83fcc019bb5501565af85e21b311 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c07ac21ffd93cd496f21626384bb9c07.setIcon(icon_8e0f83fcc019bb5501565af85e21b311);
+        
+    
+        var popup_a115bed2793b46e0df4c4497fbc22765 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8cb44d9dade35647a40f95f71a92de3 = $(`<div id="html_e8cb44d9dade35647a40f95f71a92de3" style="width: 100.0%; height: 100.0%;">Сотрудники ПАО "БалаковоРезиноТехника" обратились с анонимным письмом в редакцию газеты "Суть". Заводчан якобы привлекают на обрезку и обработку резинотехнических изделий, что не входит в их должностные обязанности. Работники просят привлечь прокуратуру.</div>`)[0];
+                popup_a115bed2793b46e0df4c4497fbc22765.setContent(html_e8cb44d9dade35647a40f95f71a92de3);
+            
+        
+
+        marker_c07ac21ffd93cd496f21626384bb9c07.bindPopup(popup_a115bed2793b46e0df4c4497fbc22765)
+        ;
+
+        
+    
+    
+            marker_c07ac21ffd93cd496f21626384bb9c07.bindTooltip(
+                `<div>
+                     Жалобы на переработки в "БалаковоРезиноТехника"
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7dc0e0c022c3ff074cc3f78d7a90bca = L.marker(
+                [44.926598, 34.135952],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_0aa84e9f386c36ee78e8fc8d7cd4e973 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7dc0e0c022c3ff074cc3f78d7a90bca.setIcon(icon_0aa84e9f386c36ee78e8fc8d7cd4e973);
+        
+    
+        var popup_64d31ca1dc05082bae6997099e66a6a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67da7e544fb26525833056d156adc688 = $(`<div id="html_67da7e544fb26525833056d156adc688" style="width: 100.0%; height: 100.0%;">Почти половина коллектива Республиканского онкологического диспансера им. В.М. Ефетова планирует писать заявлении на увольнение. Они обратились к главе Крыма и заявили о «преступной халатности» руководства, невыносимых условий труда, об оскорблениях и угрозах.</div>`)[0];
+                popup_64d31ca1dc05082bae6997099e66a6a2.setContent(html_67da7e544fb26525833056d156adc688);
+            
+        
+
+        marker_b7dc0e0c022c3ff074cc3f78d7a90bca.bindPopup(popup_64d31ca1dc05082bae6997099e66a6a2)
+        ;
+
+        
+    
+    
+            marker_b7dc0e0c022c3ff074cc3f78d7a90bca.bindTooltip(
+                `<div>
+                     Жалоба на руководство Крымского онкодиспансера
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e7d682ee1ff915d9630445179647450 = L.marker(
+                [43.314728, 45.042156],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_941327979c35880fe049dcff0615b34d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3e7d682ee1ff915d9630445179647450.setIcon(icon_941327979c35880fe049dcff0615b34d);
+        
+    
+        var popup_fb54617b1c8aca9e900f7b4aab7fa094 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d3d8ff270cb15c5f595cd8bd5b5897d = $(`<div id="html_1d3d8ff270cb15c5f595cd8bd5b5897d" style="width: 100.0%; height: 100.0%;">В ликвидированном в августе этого года ГУП «Ингушрегионводоканал» с января по настоящее время не выплачена зарплата и иные установленные законом выплаты на сумму более 29 млн. рублей. Об этом рассказали работники предприятия. Начата проверка.</div>`)[0];
+                popup_fb54617b1c8aca9e900f7b4aab7fa094.setContent(html_1d3d8ff270cb15c5f595cd8bd5b5897d);
+            
+        
+
+        marker_3e7d682ee1ff915d9630445179647450.bindPopup(popup_fb54617b1c8aca9e900f7b4aab7fa094)
+        ;
+
+        
+    
+    
+            marker_3e7d682ee1ff915d9630445179647450.bindTooltip(
+                `<div>
+                     Долги работникам ГУП «Ингушрегионводоканал»
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa682c49deffbe87f6bbd8d3661bff24 = L.marker(
+                [48.30109, 46.151768],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_53518a5e88186a618716e5fcfce32226 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa682c49deffbe87f6bbd8d3661bff24.setIcon(icon_53518a5e88186a618716e5fcfce32226);
+        
+    
+        var popup_5e27cf69c5f20771a6e799991d38cd9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed7ebc68eb7199d54521be2dbe410166 = $(`<div id="html_ed7ebc68eb7199d54521be2dbe410166" style="width: 100.0%; height: 100.0%;">Более 80-ти водителей скорой медицинской помощи из городов Ахтубинска, Харабали, а также Енотаевского, Икрянинского, Лиманского районов обратились к губернатору Астраханской области. Жалуются на низкую зарплату в 17-18 тысяч рублей.</div>`)[0];
+                popup_5e27cf69c5f20771a6e799991d38cd9f.setContent(html_ed7ebc68eb7199d54521be2dbe410166);
+            
+        
+
+        marker_aa682c49deffbe87f6bbd8d3661bff24.bindPopup(popup_5e27cf69c5f20771a6e799991d38cd9f)
+        ;
+
+        
+    
+    
+            marker_aa682c49deffbe87f6bbd8d3661bff24.bindTooltip(
+                `<div>
+                     Обращение водителей СМП Астраханской области
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec4d69b18b50669bef981176721d7c5d = L.marker(
+                [47.326206, 39.788948],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_8be0450b55f5708ddf6359328f715e91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ec4d69b18b50669bef981176721d7c5d.setIcon(icon_8be0450b55f5708ddf6359328f715e91);
+        
+    
+        var popup_bbf5a9ac2cd0ae9fb6ae877df12b1b96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f3042db041289489786919d22702a66 = $(`<div id="html_6f3042db041289489786919d22702a66" style="width: 100.0%; height: 100.0%;">Сотрудники Донского инфекционного центра обвинили руководителя в невыплате зарплат. Медики заподозрили коррупционную составляющую и пожаловались в минздрав. В ведомстве сокращения выплат объяснили «оптимизацией». Сотрудники начали увольняться.</div>`)[0];
+                popup_bbf5a9ac2cd0ae9fb6ae877df12b1b96.setContent(html_6f3042db041289489786919d22702a66);
+            
+        
+
+        marker_ec4d69b18b50669bef981176721d7c5d.bindPopup(popup_bbf5a9ac2cd0ae9fb6ae877df12b1b96)
+        ;
+
+        
+    
+    
+            marker_ec4d69b18b50669bef981176721d7c5d.bindTooltip(
+                `<div>
+                     Оплата труда медиков Донского инфекционного центра
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16faa81444c24dfb976d92679d87398f = L.marker(
+                [58.140213, 52.654976],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_28c58826be99abcca01ce8cf5a7f89d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_16faa81444c24dfb976d92679d87398f.setIcon(icon_28c58826be99abcca01ce8cf5a7f89d4);
+        
+    
+        var popup_6c8accb80a9c3830539fabc1baa83d3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2a59ce91f78f7dcdd5b4dc505b1f2b9 = $(`<div id="html_a2a59ce91f78f7dcdd5b4dc505b1f2b9" style="width: 100.0%; height: 100.0%;">Судом были в полном объеме удовлетворены исковые требования медработников отделения КДЛ к Глазовской межрайонной больнице о признании права на получение специальных социальных выплат. Федеральных выплат были лишены практически все сотрудники отделения.</div>`)[0];
+                popup_6c8accb80a9c3830539fabc1baa83d3c.setContent(html_a2a59ce91f78f7dcdd5b4dc505b1f2b9);
+            
+        
+
+        marker_16faa81444c24dfb976d92679d87398f.bindPopup(popup_6c8accb80a9c3830539fabc1baa83d3c)
+        ;
+
+        
+    
+    
+            marker_16faa81444c24dfb976d92679d87398f.bindTooltip(
+                `<div>
+                     Медики Глазовской МБ отсудили право на выплаты
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b652851623b6075bdf25b0f890dfc22 = L.marker(
+                [54.59975, 86.2842],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_47b6b488908ea6f11776b0148f807ce2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5b652851623b6075bdf25b0f890dfc22.setIcon(icon_47b6b488908ea6f11776b0148f807ce2);
+        
+    
+        var popup_3781521d329453616971f40d2c5eecb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48ecfdea1058e53b6b1cb157c7a4f341 = $(`<div id="html_48ecfdea1058e53b6b1cb157c7a4f341" style="width: 100.0%; height: 100.0%;">Кузбасскому горняку сломали машину после того, как он начал требовать от начальства честно заработанные. Александру должны 150 тысяч рублей, без денег сидят ещё 22 человека. Написаны заявления в трудовую инспекцию, прокуратуру, полицию.</div>`)[0];
+                popup_3781521d329453616971f40d2c5eecb1.setContent(html_48ecfdea1058e53b6b1cb157c7a4f341);
+            
+        
+
+        marker_5b652851623b6075bdf25b0f890dfc22.bindPopup(popup_3781521d329453616971f40d2c5eecb1)
+        ;
+
+        
+    
+    
+            marker_5b652851623b6075bdf25b0f890dfc22.bindTooltip(
+                `<div>
+                     Жалобы горняков "Ленстроя" и угрозы расправы
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b085c7f42f60c08e51e1323117ae2aae = L.marker(
+                [59.435524, 24.738224],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_6a18481d9981254fa64fddcbf0b64a51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b085c7f42f60c08e51e1323117ae2aae.setIcon(icon_6a18481d9981254fa64fddcbf0b64a51);
+        
+    
+        var popup_20f4039b5681b0c49f7a3854b1137242 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cebf9bb7b99d288133cf00002c329106 = $(`<div id="html_cebf9bb7b99d288133cf00002c329106" style="width: 100.0%; height: 100.0%;">Учителя и солидарные с ними представители других профессий в четверг, 26 октября, собрались перед зданием Рийгикогу в Эстонии, чтобы напомнить об обещании повысить зарплату работникам образования. Переговоры продолжаются.</div>`)[0];
+                popup_20f4039b5681b0c49f7a3854b1137242.setContent(html_cebf9bb7b99d288133cf00002c329106);
+            
+        
+
+        marker_b085c7f42f60c08e51e1323117ae2aae.bindPopup(popup_20f4039b5681b0c49f7a3854b1137242)
+        ;
+
+        
+    
+    
+            marker_b085c7f42f60c08e51e1323117ae2aae.bindTooltip(
+                `<div>
+                     Митинг учителей в Таллине
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2ebf09d8d8f0c7630594baac31cd81c = L.marker(
+                [54.355873, 48.585167],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_72a1d0d9f08575ac5ac8058665841615 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c2ebf09d8d8f0c7630594baac31cd81c.setIcon(icon_72a1d0d9f08575ac5ac8058665841615);
+        
+    
+        var popup_8c97c62e22bf911a1a220c8a7df6175c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e80c2803daa08b21abdae83492e9252 = $(`<div id="html_8e80c2803daa08b21abdae83492e9252" style="width: 100.0%; height: 100.0%;">Глава Ульяновска провел очередную встречу с коллективом Заволжского участка МБУ "Дорремстрой". Градоначальник отметил, что к повышению зарплаты на 5,5% в октябре-ноябре будет сделана еще одна надбавка до периода обильных снегопадов и основного заработка.</div>`)[0];
+                popup_8c97c62e22bf911a1a220c8a7df6175c.setContent(html_8e80c2803daa08b21abdae83492e9252);
+            
+        
+
+        marker_c2ebf09d8d8f0c7630594baac31cd81c.bindPopup(popup_8c97c62e22bf911a1a220c8a7df6175c)
+        ;
+
+        
+    
+    
+            marker_c2ebf09d8d8f0c7630594baac31cd81c.bindTooltip(
+                `<div>
+                     Работникам МБУ "Дорремстрой" будет сделана еще одна надбавка
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4da7b2e58b1ac9e933246dd0a9b89fc5 = L.marker(
+                [56.318356, 36.742126],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_ddd3753d7f6e85cb05a40e6ecf616685 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4da7b2e58b1ac9e933246dd0a9b89fc5.setIcon(icon_ddd3753d7f6e85cb05a40e6ecf616685);
+        
+    
+        var popup_ba115735955d1c17f726b589baa4174d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04d316e016c3fc6f1c314782649a2a4f = $(`<div id="html_04d316e016c3fc6f1c314782649a2a4f" style="width: 100.0%; height: 100.0%;">В Клину водители известного сервиса такси массово не вышли на линию. 25 октября более 100 брендированных автомобилей заняли парковку возле супермаркета на улице Победы. Это привело к повышенному спросу на услугу. Сервис поднял цены на 25%, а зарплата у водителей стала меньше.</div>`)[0];
+                popup_ba115735955d1c17f726b589baa4174d.setContent(html_04d316e016c3fc6f1c314782649a2a4f);
+            
+        
+
+        marker_4da7b2e58b1ac9e933246dd0a9b89fc5.bindPopup(popup_ba115735955d1c17f726b589baa4174d)
+        ;
+
+        
+    
+    
+            marker_4da7b2e58b1ac9e933246dd0a9b89fc5.bindTooltip(
+                `<div>
+                     Забастовка водителей такси в Клину
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_036491880988b90afeded7610b8b6651 = L.marker(
+                [55.173317, 59.661358],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_eaddbbc00febd753beb3e069348e21a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_036491880988b90afeded7610b8b6651.setIcon(icon_eaddbbc00febd753beb3e069348e21a3);
+        
+    
+        var popup_f3ad258aa242e9cc7b1d6511ad291e2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37b4dced445e04577a8e6954cba09c03 = $(`<div id="html_37b4dced445e04577a8e6954cba09c03" style="width: 100.0%; height: 100.0%;">По словам пресс-службы городской больницы Златоуста, информация из открытого письма медиков не соответствует действительности, так как помощь по профилю гинекологии оказывается полностью. Также уточняется, что в письме подписи стоят медсестер, а не врачей.</div>`)[0];
+                popup_f3ad258aa242e9cc7b1d6511ad291e2a.setContent(html_37b4dced445e04577a8e6954cba09c03);
+            
+        
+
+        marker_036491880988b90afeded7610b8b6651.bindPopup(popup_f3ad258aa242e9cc7b1d6511ad291e2a)
+        ;
+
+        
+    
+    
+            marker_036491880988b90afeded7610b8b6651.bindTooltip(
+                `<div>
+                     Открытое письмо медиков Златоуста опровергли в больнице
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29084a53f0595c64cf1db33f4ec88500 = L.marker(
+                [54.784958, 32.021935],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_d44f36b699a984ed898c09d871fd5a79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_29084a53f0595c64cf1db33f4ec88500.setIcon(icon_d44f36b699a984ed898c09d871fd5a79);
+        
+    
+        var popup_b98df07e1b2452b53fd0170479eb5287 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89520d66dfee6c2860025f75462c7973 = $(`<div id="html_89520d66dfee6c2860025f75462c7973" style="width: 100.0%; height: 100.0%;">Смоленскому работнику АО "Жилищник", рассказавшему о ситуации в компании, объявили дисциплинарное взыскание с указанием всех комментариев написанных им в социальных сетях и лишили доплат. Ранее коммунальщики жаловались на неоплачиваемые переработки.</div>`)[0];
+                popup_b98df07e1b2452b53fd0170479eb5287.setContent(html_89520d66dfee6c2860025f75462c7973);
+            
+        
+
+        marker_29084a53f0595c64cf1db33f4ec88500.bindPopup(popup_b98df07e1b2452b53fd0170479eb5287)
+        ;
+
+        
+    
+    
+            marker_29084a53f0595c64cf1db33f4ec88500.bindTooltip(
+                `<div>
+                     Работника смоленского «Жилищника» лишили доплат
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_122d877471156cdc49e59198ddf6c726 = L.marker(
+                [55.173317, 59.661358],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_96631ddbc12cf03abebe10f7f2008ab8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_122d877471156cdc49e59198ddf6c726.setIcon(icon_96631ddbc12cf03abebe10f7f2008ab8);
+        
+    
+        var popup_da2c6ff9a646d9811a98df4a852f9320 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45acbd0713f27a2970e0d5565aabc016 = $(`<div id="html_45acbd0713f27a2970e0d5565aabc016" style="width: 100.0%; height: 100.0%;">Медики Златоуста обратились к минздраву Челябинской области с открытым письмом. Как следует из обращения, сотрудники гинекологического отделения одного из подразделений горбольницы отказываются переезжать в здание роддома.</div>`)[0];
+                popup_da2c6ff9a646d9811a98df4a852f9320.setContent(html_45acbd0713f27a2970e0d5565aabc016);
+            
+        
+
+        marker_122d877471156cdc49e59198ddf6c726.bindPopup(popup_da2c6ff9a646d9811a98df4a852f9320)
+        ;
+
+        
+    
+    
+            marker_122d877471156cdc49e59198ddf6c726.bindTooltip(
+                `<div>
+                     Обращение медиков гинекологического отделения ГБ Златоуста
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89073d2d6fdeb49e4044a3de898236d3 = L.marker(
+                [47.26352, 52.30278],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_b20a363d562b67bd56355a6fbd1b29b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_89073d2d6fdeb49e4044a3de898236d3.setIcon(icon_b20a363d562b67bd56355a6fbd1b29b4);
+        
+    
+        var popup_ec70b2f4e30f82d6e9a1d4492b372350 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ace6cc1aebfe9c0435fe3ca843dafa1 = $(`<div id="html_2ace6cc1aebfe9c0435fe3ca843dafa1" style="width: 100.0%; height: 100.0%;">В Казахстане бастовали рабочие ТОО Kazakh Construction Group, компания занимается строительством завода на месторождении «Кашаган». Люди потребовали повышения зарплаты и изменения графика вахты. После беседы с чиновниками и полицейскими, они разошлись.</div>`)[0];
+                popup_ec70b2f4e30f82d6e9a1d4492b372350.setContent(html_2ace6cc1aebfe9c0435fe3ca843dafa1);
+            
+        
+
+        marker_89073d2d6fdeb49e4044a3de898236d3.bindPopup(popup_ec70b2f4e30f82d6e9a1d4492b372350)
+        ;
+
+        
+    
+    
+            marker_89073d2d6fdeb49e4044a3de898236d3.bindTooltip(
+                `<div>
+                     Краткосрочная забастовка на месторождении «Кашаган»
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24c6fe177f07e532cc1c8de3dc81d9c8 = L.marker(
+                [53.893932, 86.493805],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_af94fae5c347ea5eee1fa2152a4da8ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_24c6fe177f07e532cc1c8de3dc81d9c8.setIcon(icon_af94fae5c347ea5eee1fa2152a4da8ea);
+        
+    
+        var popup_b45d40dc4040c5cbe5880a82b4f92294 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15c0b95b76fc9f6844c91821e5f283ab = $(`<div id="html_15c0b95b76fc9f6844c91821e5f283ab" style="width: 100.0%; height: 100.0%;">В сети появилось ещё одно обращение от работников Прокопьевского дома интерната для граждан имеющих психические расстройства. Работники пожаловались на множественные нарушения и нехватку медработников. Жалобы поступают неоднократно, но ничего не меняется.</div>`)[0];
+                popup_b45d40dc4040c5cbe5880a82b4f92294.setContent(html_15c0b95b76fc9f6844c91821e5f283ab);
+            
+        
+
+        marker_24c6fe177f07e532cc1c8de3dc81d9c8.bindPopup(popup_b45d40dc4040c5cbe5880a82b4f92294)
+        ;
+
+        
+    
+    
+            marker_24c6fe177f07e532cc1c8de3dc81d9c8.bindTooltip(
+                `<div>
+                     Очередное обращение работников Прокопьевского ПНИ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d28139dbada212eef8b4d0e820124f93 = L.marker(
+                [59.044315, 49.283276],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_b1b070dd07d8e34ab651b1ca68e22388 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d28139dbada212eef8b4d0e820124f93.setIcon(icon_b1b070dd07d8e34ab651b1ca68e22388);
+        
+    
+        var popup_f3c4fd4a9e73e6e9510802a53cc1bea3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a438e41351137a3e4453b0e79e25efc = $(`<div id="html_6a438e41351137a3e4453b0e79e25efc" style="width: 100.0%; height: 100.0%;">Прокуратура Юрьянского района Кировской области провела проверку на основании поступившего обращения работников. Установлено, что работодатель уклонялся от оформления трудовых договоров с принятыми на работу 3 гражданами и не рассчитался с ними при увольнении. Общий долг составил 37 тыс. рублей. Прокурор внес представление и направил иски в суд. Иски были рассмотрены и удовлетворены. Долг по зарплате погашен.</div>`)[0];
+                popup_f3c4fd4a9e73e6e9510802a53cc1bea3.setContent(html_6a438e41351137a3e4453b0e79e25efc);
+            
+        
+
+        marker_d28139dbada212eef8b4d0e820124f93.bindPopup(popup_f3c4fd4a9e73e6e9510802a53cc1bea3)
+        ;
+
+        
+    
+    
+            marker_d28139dbada212eef8b4d0e820124f93.bindTooltip(
+                `<div>
+                     Жалоба работников в Юрье (Кировская область)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7199068ddf2becd7a1906e18d338d345 = L.marker(
+                [50.4183, 30.55052],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_8a63c2ccdf05c5053e6513b20e2a26b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7199068ddf2becd7a1906e18d338d345.setIcon(icon_8a63c2ccdf05c5053e6513b20e2a26b1);
+        
+    
+        var popup_2207fa9f02ff022348e304a2c9e7ca99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85be8b6370a9e22b49dbd04822687513 = $(`<div id="html_85be8b6370a9e22b49dbd04822687513" style="width: 100.0%; height: 100.0%;">20 октября в Киеве перед офисом службы доставки еды Bolt Food собрались курьеры компании. Они потребовали ввести минимальную оплату заказа, поднять ставки на 70% и разблокировать несправедливо заблокированных курьеров. Это уже пятая забастовка курьеров Bolt Food за последний месяц.</div>`)[0];
+                popup_2207fa9f02ff022348e304a2c9e7ca99.setContent(html_85be8b6370a9e22b49dbd04822687513);
+            
+        
+
+        marker_7199068ddf2becd7a1906e18d338d345.bindPopup(popup_2207fa9f02ff022348e304a2c9e7ca99)
+        ;
+
+        
+    
+    
+            marker_7199068ddf2becd7a1906e18d338d345.bindTooltip(
+                `<div>
+                     Забастовка курьеров Bolt Food в Киеве
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe8fd1a21d6b871b0e414824a094f187 = L.marker(
+                [53.00086, 31.588844],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_2d1a5ac6a06bf89ff7c5356f62954828 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe8fd1a21d6b871b0e414824a094f187.setIcon(icon_2d1a5ac6a06bf89ff7c5356f62954828);
+        
+    
+        var popup_2ab4a085bbd56466e5aa65fd4de9f649 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f3fcb1085f7df7a237a30c37edb19e6 = $(`<div id="html_5f3fcb1085f7df7a237a30c37edb19e6" style="width: 100.0%; height: 100.0%;">Работники МУП «Красногорский коммунальник» в Брянской области пожаловались в прокуратуру на невыплату зарплаты за период с июля по октябрь 2023 года на сумму более 2 млн рублей. Прокурор внес представление директору предприятия и направил в суд 21 иск. Акты прокурорского реагирования находятся на рассмотрении.</div>`)[0];
+                popup_2ab4a085bbd56466e5aa65fd4de9f649.setContent(html_5f3fcb1085f7df7a237a30c37edb19e6);
+            
+        
+
+        marker_fe8fd1a21d6b871b0e414824a094f187.bindPopup(popup_2ab4a085bbd56466e5aa65fd4de9f649)
+        ;
+
+        
+    
+    
+            marker_fe8fd1a21d6b871b0e414824a094f187.bindTooltip(
+                `<div>
+                     Жалоба работников МУП «Красногорский коммунальник» (Брянская область)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec597356a21fcf4eb84d1ec39d728ede = L.marker(
+                [55.066395, 60.105602],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_3dd79d1f36ffac978a101c300c56977c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ec597356a21fcf4eb84d1ec39d728ede.setIcon(icon_3dd79d1f36ffac978a101c300c56977c);
+        
+    
+        var popup_1c6b576cd3c9a7c4685aec8c327a5b3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdfa2ed18027de285e02373a2e8ee272 = $(`<div id="html_cdfa2ed18027de285e02373a2e8ee272" style="width: 100.0%; height: 100.0%;">23 октября 2023 года Челябинский областной суд оставил в силе решение Миасского городского суда от 3 августа 2023 года о взыскании с АО "АЗ "Урал" в пользу водителей-испытателей цеха Главный конвейер недополученной части зарплаты (доплаты за работу в вечернее время) за февраль, март, апрель и компенсации морального вреда.</div>`)[0];
+                popup_1c6b576cd3c9a7c4685aec8c327a5b3d.setContent(html_cdfa2ed18027de285e02373a2e8ee272);
+            
+        
+
+        marker_ec597356a21fcf4eb84d1ec39d728ede.bindPopup(popup_1c6b576cd3c9a7c4685aec8c327a5b3d)
+        ;
+
+        
+    
+    
+            marker_ec597356a21fcf4eb84d1ec39d728ede.bindTooltip(
+                `<div>
+                     Решение суда о доплате работникам АО "АЗ "Урал" за работу в ночное время осталось в силе
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6431bed84f31e304571a843c2316b9de = L.marker(
+                [41.2918, 69.26231],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_cd2548b6eb2e8071b881aee6f1dc6a73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6431bed84f31e304571a843c2316b9de.setIcon(icon_cd2548b6eb2e8071b881aee6f1dc6a73);
+        
+    
+        var popup_6c1fadd00e3f693b5aad03c5ca0c90fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47c262aa59dc57510a8372c0949ee31a = $(`<div id="html_47c262aa59dc57510a8372c0949ee31a" style="width: 100.0%; height: 100.0%;">В управлении дошкольного и школьного образования Ташкента заявили, что "ситуацию изучил Совет Ташкентского городского отделения профсоюза работников образования и науки Узбекистана, и по его заключению директор школы Ирина Казакова была уволена".</div>`)[0];
+                popup_6c1fadd00e3f693b5aad03c5ca0c90fa.setContent(html_47c262aa59dc57510a8372c0949ee31a);
+            
+        
+
+        marker_6431bed84f31e304571a843c2316b9de.bindPopup(popup_6c1fadd00e3f693b5aad03c5ca0c90fa)
+        ;
+
+        
+    
+    
+            marker_6431bed84f31e304571a843c2316b9de.bindTooltip(
+                `<div>
+                     Чиновники объяснили увольнение директора школы № 160
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8287f8580328557d82298a44cd082e4e = L.marker(
+                [59.55838, 150.7981],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_97b3b0eea2f7fa4b4ceef7ba6a184655 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8287f8580328557d82298a44cd082e4e.setIcon(icon_97b3b0eea2f7fa4b4ceef7ba6a184655);
+        
+    
+        var popup_2eecf7325217e22ca6a13c896b1e05b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48a50346cbc7444f715a38af9b475c14 = $(`<div id="html_48a50346cbc7444f715a38af9b475c14" style="width: 100.0%; height: 100.0%;">Коллектив ГБУЗ «Магаданская областная больница» пожаловался в прокуратуру на отсутствие положенной по закону специальной социальной выплаты. Прокурор обратился с иском в суд. На руководство больницы возложена обязанность включить заявителей в реестр работников, имеющих право на получение специальной социальной выплаты.</div>`)[0];
+                popup_2eecf7325217e22ca6a13c896b1e05b9.setContent(html_48a50346cbc7444f715a38af9b475c14);
+            
+        
+
+        marker_8287f8580328557d82298a44cd082e4e.bindPopup(popup_2eecf7325217e22ca6a13c896b1e05b9)
+        ;
+
+        
+    
+    
+            marker_8287f8580328557d82298a44cd082e4e.bindTooltip(
+                `<div>
+                     Жалоба медработников ГБУЗ «Магаданская областная больница»
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f32c30926820631bb8b65c762890988 = L.marker(
+                [52.958206, 158.39441],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_75f931cede6db1460ee6fd23286c8425 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f32c30926820631bb8b65c762890988.setIcon(icon_75f931cede6db1460ee6fd23286c8425);
+        
+    
+        var popup_b76afcd167c9a77482deb2eeb82cad1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2400910208fe3406ea547b9556964b22 = $(`<div id="html_2400910208fe3406ea547b9556964b22" style="width: 100.0%; height: 100.0%;">Рабочие рыбоперерабатывающего завода «Сокра» написали коллективное письмо губернатору Камчатского края, прокурору и в СК РФ по краю из-за блокировки работы предприятия, вызванной действиями временного управляющего. Кроме того, сообщают о сокращении зарплат и угрозах увольнения.</div>`)[0];
+                popup_b76afcd167c9a77482deb2eeb82cad1e.setContent(html_2400910208fe3406ea547b9556964b22);
+            
+        
+
+        marker_1f32c30926820631bb8b65c762890988.bindPopup(popup_b76afcd167c9a77482deb2eeb82cad1e)
+        ;
+
+        
+    
+    
+            marker_1f32c30926820631bb8b65c762890988.bindTooltip(
+                `<div>
+                     Жалоба рабочих рыбоперерабатывающего завода «Сокра»
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6ea067dfa76e1b730430f617f154337 = L.marker(
+                [52.735664, 103.649155],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_5a620ccfb9ad6a76ef8a05545d4d277e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d6ea067dfa76e1b730430f617f154337.setIcon(icon_5a620ccfb9ad6a76ef8a05545d4d277e);
+        
+    
+        var popup_634ba11071829775bd70175b443be00a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c52d33a81b30b556dcfb262f7c352e1 = $(`<div id="html_3c52d33a81b30b556dcfb262f7c352e1" style="width: 100.0%; height: 100.0%;">В Усолье-Сибирском следователи СК возбудили уголовное дело из-за частичной невыплаты зарплаты работникам редакции городской газеты. Общая сумма задолженности составила около 700 тысяч рублей. Расследование уголовного дела продолжается.</div>`)[0];
+                popup_634ba11071829775bd70175b443be00a.setContent(html_3c52d33a81b30b556dcfb262f7c352e1);
+            
+        
+
+        marker_d6ea067dfa76e1b730430f617f154337.bindPopup(popup_634ba11071829775bd70175b443be00a)
+        ;
+
+        
+    
+    
+            marker_d6ea067dfa76e1b730430f617f154337.bindTooltip(
+                `<div>
+                     Уголовное дело из-за долгов в «Усольской городской газете»
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0ce872b81d87da7ea8082f470285d65 = L.marker(
+                [41.2918, 69.26231],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_d41b00e6820f64e3c0e8ab1e531a17c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e0ce872b81d87da7ea8082f470285d65.setIcon(icon_d41b00e6820f64e3c0e8ab1e531a17c7);
+        
+    
+        var popup_fd56dfe8148d3fdea555d5f36717daa2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1a2311adca71981138f5f5ca2185e20 = $(`<div id="html_b1a2311adca71981138f5f5ca2185e20" style="width: 100.0%; height: 100.0%;">Педколлектив ташкентской школы № 160 обратился к президенту с просьбой оградить их от постоянных проверок и попыток "убрать" нынешнего директора. Учителя заявили, что могут предоставить все доказательства невиновности директора.</div>`)[0];
+                popup_fd56dfe8148d3fdea555d5f36717daa2.setContent(html_b1a2311adca71981138f5f5ca2185e20);
+            
+        
+
+        marker_e0ce872b81d87da7ea8082f470285d65.bindPopup(popup_fd56dfe8148d3fdea555d5f36717daa2)
+        ;
+
+        
+    
+    
+            marker_e0ce872b81d87da7ea8082f470285d65.bindTooltip(
+                `<div>
+                     Обращение учителей школы №160 в Ташкенте
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78d3c686d30d7f6987da28445f20e737 = L.marker(
+                [42.869675, 74.59548],
+                {}
+            ).addTo(map_8fac9cf497a94e96e3ad5c63e508d3ac);
+        
+    
+            var icon_4ae3e1c26df8620d914a46bc8b595d2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_78d3c686d30d7f6987da28445f20e737.setIcon(icon_4ae3e1c26df8620d914a46bc8b595d2d);
+        
+    
+        var popup_d47c79cae758149abf9b6fe8fe6e44c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d412dae95fed85c829b03cfe54d3f44 = $(`<div id="html_2d412dae95fed85c829b03cfe54d3f44" style="width: 100.0%; height: 100.0%;">19 октября шесть сотрудников Центра скорой помощи в Бишкеке вышли на акцию протеста к зданию министерства здравоохранения Они заявили о своих жалобах на руководство, рассказав о сокращении зарплат. Со стороны начальства продолжает оказываться давление.</div>`)[0];
+                popup_d47c79cae758149abf9b6fe8fe6e44c5.setContent(html_2d412dae95fed85c829b03cfe54d3f44);
+            
+        
+
+        marker_78d3c686d30d7f6987da28445f20e737.bindPopup(popup_d47c79cae758149abf9b6fe8fe6e44c5)
+        ;
+
+        
+    
+    
+            marker_78d3c686d30d7f6987da28445f20e737.bindTooltip(
+                `<div>
+                     Демонстрация медиков у здания минздрава в Бишкеке
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
